@@ -1,0 +1,26 @@
+<template name="promotion">
+
+    <!-- +++++ Promotion Section +++++ -->
+
+    <div class="container pt">
+        <div class="row mt centered">
+            {{#each Promotions}}
+                <div class="col-lg-4">
+                    <!-- <a class="zoom green" href="/project/1"> -->
+                    <img class="edit-image" src="{{promotionImage}}">
+                    <p>{{promotionName}}  <small>{{promotionPrice}}</small></p>
+                    <p>{{format createdAt}}</p>
+                    <hr>
+                    <br>
+                </div>
+
+            {{else}}
+
+                <p>There are no promotions</p>
+
+            {{/each}}
+        </div><!-- /row -->
+
+    </div><!-- /container -->
+
+</template>

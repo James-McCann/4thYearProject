@@ -1,0 +1,37 @@
+<template name="list_promotion">
+
+	<div class="container pt">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<h2>Promotions</h2>
+				<a href="/admin/promotion/add" class="btn btn-success btn-tiny">Create Promotion</a>
+				<br><br>
+                <table class="table table-striped">
+                	<tr>
+                		<th>Promotions</th>
+                		<th>Price</th>
+                		<th>Created at</th>
+                		<!-- <th>Image</th> -->
+                	</tr>
+                    {{#each Promotions}}
+                    <tr>
+                    	<td>{{promotionName}}</td>
+                    	<td>{{promotionPrice}}</td>
+                    	<td>{{format createdAt}}</td>
+                    	<!-- <td>{{image}}</td> -->
+                         <td><a href="/admin/promotion/{{_id}}/edit" class="btn btn-primary btn-tiny">Edit</a><button class="btn btn-danger delete_promotion">
+                         	Delete</button>
+                         </td>
+                    </tr>
+                     {{else}}
+                    <tr>
+                    	<td>No Promotions</td>
+                    </tr>
+                    {{/each}}
+                </table>
+			</div>
+		</div>
+	</div>
+
+
+</template>

@@ -1,0 +1,33 @@
+<template name="headerConfig">
+
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>Header Items</h2>
+            <a href="/admin/headerConfig/add" class="btn btn-success btn-tiny">Header Item</a>
+            <br><br>
+            <table class="table table-striped">
+                <tr>
+                    <th>Header Title</th>
+                    <th>Header subTitle</th>
+                    <th>Header subText</th>
+                    <!-- <th>Image</th> -->
+                </tr>
+                {{#each HeaderConfig}}
+                    <tr>
+                        <td>{{headerTitle}}</td>
+                        <td>{{headerSubTitle}}</td>
+                        <td>{{headerSubText}}</td>
+                        <td><a href="/admin/headerConfig/{{_id}}/edit" class="btn btn-primary btn-tiny">Edit</a><button class="btn btn-danger delete_header">
+                            Delete</button>
+                        </td>
+                    </tr>
+                {{else}}
+                    <tr>
+                        <td>No Header Items</td>
+                    </tr>
+                {{/each}}
+            </table>
+        </div>
+    </div>
+
+</template>

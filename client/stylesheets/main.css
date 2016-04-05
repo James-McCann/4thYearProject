@@ -1,0 +1,156 @@
+
+/*body{*/
+	/*background-color: #cccccc;*/
+/*}*/
+
+/*.main{*/
+	/*background-color: #ffffff;*/
+	/*border-radius: 15px;*/
+/*}*/
+/* Header css */
+
+
+
+.primary{
+	color: #0383c0;
+	margin: 5px 0 0 0;
+}
+.subtext {
+	color: #666;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 5px 0 0 45px;
+}
+
+/* Logo css */
+.logo {
+	width: 100%;
+	margin: 40px 0 0 0;
+
+}
+
+.logo img{
+	width:100px;
+	height:100px;
+	float:left;
+}
+
+
+/* Nav Bar css */
+
+.navbar {
+	margin-bottom: 20px;
+	margin-top: 30px;
+	background: #0383c0 url(../img/navbar.png) repeat-x;
+	border: 1px #ccc solid;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default a:hover {
+	background: none;
+	color: #0383c0 !important;
+	font-weight: bold;
+}
+
+
+/* Menu Items css */
+
+.thumbnail{
+	width: auto;
+	height:auto;
+	overflow:auto;
+
+}
+.thumbnail img{
+	width: 200px;
+	height:150px;
+}
+
+
+
+/* Footer css */
+
+#footer{
+	text-align:center;
+	height:60px;
+	background:#f4f4f4;
+	padding-top:20px;
+	margin-top:50px;
+}
+
+/* Loading */
+.loading-message {
+	color: #fff;
+	font-size: 25px;
+	font-weight: 300;
+	font-family: sans-serif;
+}
+
+.sk-spinner-three-bounce div {
+	background-color: #fff;
+}
+
+
+/*!* Voucher *!*/
+
+/*.selectedUser{*/
+	/*background-color: #0383c0;*/
+	/*color:#ffffff;*/
+	/*font-weight: bold;*/
+/*}*/
+
+/* Bits and Bobs */
+h3{
+	color: #0383c0;
+}
+
+.edit-image{
+	width:200px;
+	height: 150px;
+}
+
+.img-circle{
+	width:100%;
+}
+
+.post{
+	padding-top:15px;
+
+}
+
+.map-container {
+	width: 100%;
+	max-width: 100%;
+	height: 500px;
+}
+
+.delete_post{
+	float:right;
+	background: none;
+	border:none;
+	font-size: 3em;
+	color:red;
+}
+
+
+/* Mobile */
+@media only screen and (max-width : 480px) {
+	.navbar-collapse li a{
+		background: #0383c0 url(../img/navbar.png) repeat-x;
+		color:#ffffff;
+	}
+
+}
+
+
+/* Profile */
+.profile{
+	margin-top:50px ;
+}
+
+.profile-image{
+	display:block;
+	margin: auto;
+
+}

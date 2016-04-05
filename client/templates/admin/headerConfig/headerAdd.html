@@ -1,0 +1,31 @@
+<template name="add_header">
+
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Create Header Item</h2>
+                <form class="add_header_form" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label>Header Title</label>
+                        <input type="text" class="form-control" id="headerTitle" name="headerTitle" placeholder="Header Title">
+                    </div>
+                    <div class="form-group">
+                        <label>Header SubTitle</label>
+                        <input type="text" class="form-control" id="headerSubTitle" name="headerSubTitle" placeholder="Header Sub Title">
+                    </div>
+                    <div class="form-group">
+                        <label>Header SubText</label>
+                        <input type="text" class="form-control" id="headerSubText" name="headerSubText" placeholder="Header Sub Text">
+                    </div>
+                    <div class="form-group">
+                        <label>Header Logo</label>
+                        <input type="file" id="headerLogo" name="headerLogo" accept="image/*">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <a href="/admin/headerConfig" class="btn btn-default">Go Back</a>
+                </form>
+            </div>
+        </div>
+
+
+
+</template>

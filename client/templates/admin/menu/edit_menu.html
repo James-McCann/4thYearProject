@@ -1,0 +1,32 @@
+<template name="edit_menu">
+
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<h2>Edit Menu Item: <small>{{name}}</small></h2>
+				<form class="edit_menu_form" enctype="multipart/form-data">
+                                	<div class="form-group">
+                                		<label>Name</label>
+                                		<input type="text" class="form-control" id="name" name="name" value="{{name}}">
+                                	</div>
+                                	<div class="form-group">
+                                		<label>Price</label>
+                                		<input type="text" class="form-control" id="price" name="price" value="{{price}}">
+                                	</div>
+                                	<div class="form-group">
+                                		<label>Description</label>
+                                		<input type="text" class="form-control" id="description" name="description" value="{{description}}">
+                                	</div>
+                                	<div class="form-group">
+                                		<label>Image</label>
+                                		<input type="file" id="menuImage" name="menuImage">
+                                                Current Image: <img class="edit-image" src="{{menuImage}}">
+                                	</div>
+                                	<button type="submit" class="btn btn-primary">Submit</button>
+                			<a href="/admin/menu" class="btn btn-default">Go Back</a>
+				</form>
+			</div>
+		</div>
+
+
+
+</template>

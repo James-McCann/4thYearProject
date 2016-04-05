@@ -1,0 +1,30 @@
+<template name="edit_header">
+
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>Edit Header: <small>{{headerTitle}}</small></h2>
+            <form class="edit_header_form" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>Header Title</label>
+                    <input type="text" class="form-control" id="headerTitle" name="headerTitle" value="{{headerTitle}}">
+                </div>
+                <div class="form-group">
+                    <label>Header SubTitle</label>
+                    <input type="text" class="form-control" id="headerSubTitle" name="headerSubTitle" value="{{headerSubTitle}}">
+                </div>
+                <div class="form-group">
+                    <label>Header SubText</label>
+                    <input type="text" class="form-control" id="headerSubText" name="headerSubText" value="{{headerSubText}}">
+                </div>
+                <div class="form-group">
+                    <label>Header Logo</label>
+                    <input type="file" id="headerLogo" name="headerLogo">
+                    Current Image: <img class="edit-image" src="{{headerImage}}">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a href="/admin/headerConfig" class="btn btn-default">Go Back</a>
+            </form>
+        </div>
+    </div>
+
+</template>

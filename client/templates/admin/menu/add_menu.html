@@ -1,0 +1,31 @@
+<template name="add_menu">
+	<div class="container pt">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<h2>Create Menu Item</h2>
+				<form class="add_menu_form" enctype="multipart/form-data">
+                	<div class="form-group">
+                		<label>Name</label>
+                		<input type="text" class="form-control" id="name" name="name" placeholder="Item Name">
+                	</div>
+                	<div class="form-group">
+                		<label>Price</label>
+                		<input type="text" class="form-control" id="price" name="price" placeholder="Item Price">
+                	</div>
+                	<div class="form-group">
+                		<label>Description</label>
+                		<input type="text" class="form-control" id="description" name="description" placeholder="Item Description">
+                	</div>
+                	<div class="form-group">
+                		<label>Menu Item Image</label>
+                		<input type="file" id="menuImage" name="menuImage" accept="image/*">
+                	</div>
+                	<button type="submit" class="btn btn-primary">Submit</button>
+					<a href="/admin/menu" class="btn btn-default">Go Back</a>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+</template>

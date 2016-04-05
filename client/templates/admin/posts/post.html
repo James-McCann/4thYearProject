@@ -1,0 +1,49 @@
+<template name="posts">
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Post a comment!
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Have Your Say Today! Be nice :)</h4>
+                </div>
+                <div class="modal-body">
+                    {{#autoForm collection ="Posts" id ="insertPost" type="insert"}}
+                        {{> afQuickField name='postTitle'}}
+                        {{> afQuickField name="post" rows=4}}
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save Message</button>
+                    {{/autoForm}}
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    {{# each Posts}}
+    <div class="row post">
+        <div class="col-md-1">
+
+                <p>{{> avatar userId=userId shape="circle"}}</p>
+
+        </div>
+        <div class="col-md-11">
+            <small>Posted by <strong>{{username}}</strong> at {{format postCreatedAt}}</small>
+            <h3>{{postTitle}}</h3>
+            <p>{{post}}</p>
+            {{#if isInRole 'admin'}}
+            <button class="delete_post">&times;</button>
+            {{/if}}
+        </div>
+    </div>
+    <hr>
+    {{else}}
+    <p>no posts :(</p>
+    {{/each}}
+</template>
