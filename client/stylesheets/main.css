@@ -133,9 +133,24 @@ h3{
 	color:red;
 }
 
+/* Home */
+.carouselImage{
+	width:auto;
+	height:300px;
+}
+.panel{
+	background:url(../img/navbar.png) repeat-x;
+	border: 1px #ccc solid;
+}
+
+.panel-heading{
+	color: #0383c0;
+}
+
+
 
 /* Mobile */
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 500px) {
 	.navbar-collapse li a{
 		background: #0383c0 url(../img/navbar.png) repeat-x;
 		color:#ffffff;

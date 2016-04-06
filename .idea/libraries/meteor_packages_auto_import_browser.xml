@@ -223,6 +223,7 @@
         <item url="file://$USER_HOME$/.meteor/packages/accounts-base/1.2.2/web.browser/accounts_client.js" />
         <item url="file://$USER_HOME$/.meteor/packages/mrt_flash-messages/1.0.1/web.browser/packages/mrt_flash-messages.js" />
         <item url="file://$USER_HOME$/.meteor/packages/accounts-facebook/1.0.6/web.browser/facebook_login_button.css" />
+        <item url="file://$USER_HOME$/.meteor/packages/fortawesome_fontawesome/4.5.0/web.browser/upstream/css/font-awesome.css" />
         <item url="file://$USER_HOME$/.meteor/packages/mongo-id/1.0.1/web.browser/id.js" />
         <item url="file://$USER_HOME$/.meteor/packages/accounts-base/1.2.2/web.browser/accounts_common.js" />
         <item url="file://$USER_HOME$/.meteor/packages/accounts-base/1.2.2/web.browser/accounts_rate_limit.js" />
@@ -564,6 +565,7 @@
       <root url="file://$USER_HOME$/.meteor/packages/accounts-base/1.2.2/web.browser/accounts_client.js" />
       <root url="file://$USER_HOME$/.meteor/packages/accounts-facebook/1.0.6/web.browser/facebook_login_button.css" />
       <root url="file://$USER_HOME$/.meteor/packages/mrt_flash-messages/1.0.1/web.browser/packages/mrt_flash-messages.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/fortawesome_fontawesome/4.5.0/web.browser/upstream/css/font-awesome.css" />
       <root url="file://$USER_HOME$/.meteor/packages/accounts-base/1.2.2/web.browser/accounts_common.js" />
       <root url="file://$USER_HOME$/.meteor/packages/mongo-id/1.0.1/web.browser/id.js" />
       <root url="file://$USER_HOME$/.meteor/packages/accounts-base/1.2.2/web.browser/accounts_rate_limit.js" />

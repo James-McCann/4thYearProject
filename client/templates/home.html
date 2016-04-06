@@ -1,17 +1,109 @@
 <template name="home">
 
-	<div id="ww">
-	    <div class="container">
-			<div class="row">
-				<div class="col-xs-8 col-xs-offset-2 centered">
-					<img src="assets/img/meteorjs.jpg" alt="MeteorImage" class="img-responsive center-block" />
-					<h1>Prototype - Meteor js</h1>
-					<p>Welcome to the home page!</p>
-				</div><!-- /col-lg-8 -->
-			</div><!-- /row -->
-	    </div> <!-- /container -->
-	</div><!-- /ww -->
 
+
+
+                <header id="myCarousel" class="carousel slide">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="carouselImage"> <img class="img-responsive center-block" src="../img/burgernew.png"/></div>
+                            <div class="carousel-caption">
+                                <!--<h2>Caption 1</h2>-->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carouselImage"> <img class="img-responsive center-block" src="../img/codnew.png"/></div>
+                            <div class="carousel-caption">
+                                <!--<h2>Caption 2</h2>-->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carouselImage"> <img class="img-responsive center-block" src="../img/filletburgernew.png"/></div>
+                            <div class="carousel-caption">
+                                <!--<h2>Caption 3</h2>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="icon-prev"></span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="icon-next"></span>
+                    </a>
+                </header>
+
+
+                    <!-- Marketing Icons Section -->
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                                <h2>Hungry? Go On, Treat Yourself</h2><hr>
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h4><i class="fa fa-cutlery"></i>  Menu</h4>
+                                </div>
+
+                                <div class="panel-body">
+                                    <p>Welcome to Dooly's Famous Fresh Fish & Chips.
+                                        At Dooly's we use only the Freshest Ingredients
+                                        to make your Fast Food experience the Tastiest yet.
+                                        Come join us and be a part of the Dooly's Tradition.</p>
+                                    <a href="/menu" class="btn btn-primary">Menu</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h4><i class="fa fa-fw fa-gift"></i>  Promotions</h4>
+                                </div>
+                                <div class="panel-body">
+                                   <p> Welcome to Dooly's Famous Fresh Fish & Chips.
+                                    At Dooly's we use only the Freshest Ingredients
+                                    to make your Fast Food experience the Tastiest yet.
+                                    Come join us and be a part of the Dooly's Tradition. </p>
+                                    <a href="/promotion" class="btn btn-primary">Promotions</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel">
+
+                                <div class="panel-heading">
+                                    <h4><i class="fa fa-fw fa-compass"></i>  Locations</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <p> Welcome to Dooly's Famous Fresh Fish & Chips.
+                                        At Dooly's we use only the Freshest Ingredients
+                                        to make your Fast Food experience the Tastiest yet.
+                                        Come join us and be a part of the Dooly's Tradition. </p>
+                                    <a href="/map" class="btn btn-primary">Shop Locations</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+    <script>
+        $('.carousel').carousel({
+            interval: 5000
+        })
+    </script>
 
    
 </template>

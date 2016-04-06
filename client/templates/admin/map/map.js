@@ -68,7 +68,7 @@ Template.add_marker.onCreated(function() {
                 });
 
                 //Delete marker
-                google.maps.event.addListener(marker, 'rightclick', function(e){
+                google.maps.event.addListener(marker, 'dblclick', function(e){
                     var id = marker.id;
                     Meteor.call('removeMarker', id);
 
