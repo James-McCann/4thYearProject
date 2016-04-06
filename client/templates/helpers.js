@@ -7,6 +7,11 @@ Template.registerHelper('format', function(date){
 });
 
 
+Template.registerHelper('formatrpormo', function(date){
+	return moment(date).format('DD-MM-YY h:mm');
+
+});
+
 
 
 Avatar.setOptions({
