@@ -4,6 +4,7 @@ Template.add_menu.events({
 		var price = event.target.price.value;
 		var description = event.target.description.value;
 
+
 		var file = $('#menuImage').get(0).files[0];
 
 		if(file) {

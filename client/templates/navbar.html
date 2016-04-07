@@ -37,10 +37,12 @@
                                     </ul>
                                 </li>
                             {{/if}}
-
+                    </ul>
+                                  <ul class="nav navbar-nav navbar-right">
                                   {{#if currentUser }}
+                                      <li><a href="#" >{{currentUser.profile.name}}</a></li>
                                       <li><a href="sign-out">Sign Out</a></li>
-                                     <!--<li>{{> avatar user=currentUser shape="circle"}}</li>-->
+                                     <!--<li>{{> avatar user=currentUser}}</li>-->
                                   {{else}}
                                       <li><a href="sign-in">Sign In</a></li>
                                       <li><a href="sign-up">Sign Up</a></li>
