@@ -1,6 +1,7 @@
 Template.add_promotion.events({
 
 	'submit .add_promotion_form':function(){
+
 		var name = event.target.name.value;
 		var price = event.target.price.value;
 
@@ -47,7 +48,6 @@ Template.edit_promotion.events({
 			fsFile = new FS.File(file);
 			PromotionsImages.insert(fsFile, function(err, result) {
 				if(!err){
-
 						var imageLocation = '/cfs/files/PromotionsImages/' + result._id;
 
 						//Insecure package removed. Edit function -  methods js to libs folder

@@ -1,6 +1,5 @@
 <template name="edit_promotion">
-	<div class="container pt">
-		<div class="row">
+
 			<div class="col-lg-8 col-lg-offset-2">
 				<h2>Edit Promotion: <small>{{promotionName}}</small></h2>
 				<form class="edit_promotion_form" enctype="multipart/form-data">
@@ -12,10 +11,6 @@
                                 		<label>Price</label>
                                 		<input type="text" class="form-control" id="price" name="price" value="{{promotionPrice}}">
                                 	</div>
-                                	<!--<div class="form-group">-->
-                                		<!--<label>Description</label>-->
-                                		<!--<input type="text" class="form-control" id="description" name="description" value="{{description}}">-->
-                                	<!--</div>-->
                                 	<div class="form-group">
                                 		<label>Image</label>
                                 		<input type="file" id="promotionImage" name="promotionImage">
@@ -25,8 +20,7 @@
                 			<a href="/admin/promotion" class="btn btn-default">Go Back</a>
 				</form>
 			</div>
-		</div>
-	</div>
+
 
 
 </template>
