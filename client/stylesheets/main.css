@@ -1,16 +1,5 @@
 
-/*body{*/
-	/*background-color: #cccccc;*/
-/*}*/
-
-/*.main{*/
-	/*background-color: #ffffff;*/
-	/*border-radius: 15px;*/
-/*}*/
-/* Header css */
-
-
-
+/* Header */
 .primary{
 	color: #0383c0;
 	margin: 5px 0 0 0;
@@ -53,6 +42,18 @@
 	font-weight: bold;
 }
 
+@media screen and (max-width: 500px) {
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:focus,
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default a:hover {
+		background: none;
+		color: #ffffff !important;
+		font-weight: bold;
+	}
+}
+
+
 
 /* Menu Items css */
 
@@ -91,14 +92,6 @@
 	background-color: #fff;
 }
 
-
-/*!* Voucher *!*/
-
-/*.selectedUser{*/
-	/*background-color: #0383c0;*/
-	/*color:#ffffff;*/
-	/*font-weight: bold;*/
-/*}*/
 
 /* Bits and Bobs */
 h3{

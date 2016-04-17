@@ -44,3 +44,6 @@ pcel:loading
 fortawesome:fontawesome
 meteorhacks:kadira
 cfs:s3
+velocity:console-reporter
+xolvio:cucumber
+matteodem:easy-search

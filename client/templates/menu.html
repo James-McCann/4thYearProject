@@ -4,7 +4,7 @@
                     {{#each MenuItems}}
                     <div class="col-md-4">
                          <div class ="thumbnail">
-                            <img src="{{menuImage}}">
+                            <img src="{{this.url}}{{menuImage}}">
                             <h3>{{name}}</h3>
                             <p class ="pull-right"><h4>{{price}}</h4></p>
                             <p>{{description}}</p>
@@ -16,8 +16,6 @@
                      <p>There are no menu items</p>
 
                     {{/each}}
-
-
 
 
 </template>

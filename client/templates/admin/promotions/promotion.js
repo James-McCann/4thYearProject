@@ -42,29 +42,8 @@ Template.edit_promotion.events({
 		var price = event.target.price.value;
 
 
-		var file = $('#promotionImage').get(0).files[0];
+		Meteor.call('editPromotion',this._id, name, price);
 
-		if(file){
-			fsFile = new FS.File(file);
-			PromotionsImages.insert(fsFile, function(err, result) {
-				if(!err){
-						var imageLocation = '/cfs/files/PromotionsImages/' + result._id;
-
-						//Insecure package removed. Edit function -  methods js to libs folder
-						Meteor.call('editPromotion',this._id, imageLocation, name, price);
-
-				}
-
-			});
-
-		} else {
-
-			//without image
-			var imageLocation = '/img/comingsoon.png';
-			Meteor.call('editPromotion',this._id, imageLocation, name, price);
-
-
-		}
 
 		FlashMessages.sendSuccess('Promotion Updated');
 		Router.go('/admin/promotion');

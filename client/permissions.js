@@ -24,15 +24,14 @@ Meteor.startup(function () {
 		homeRoute: '/',
 		dashboardRoute: '/',
 		waitEmailVerification: false,
-		extraSignUpFields: [{
-			field:"username",
-			label: "Username",
-			type:"text"
-		}]
-
-
+		passwordSignupFields: 'USERNAME_AND_EMAIL'
 	});
 });
+
+Accounts.ui.config({
+	passwordSignupFields: 'USERNAME_AND_EMAIL'
+});
+
 
 Meteor.users.deny({
 	update() {

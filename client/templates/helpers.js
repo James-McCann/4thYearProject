@@ -12,6 +12,14 @@ Template.registerHelper('formatrpormo', function(date){
 
 });
 
+//android image issue
+//Template.registerHelper('root_url', function(){
+//	return 'https//:localhost:3000'.ROOT_URL.slice(0,-1);
+//});
+
+//Template.searchBox.helpers({
+//	UsersIndex: () => UsersIndex
+//});
 
 
 Avatar.setOptions({

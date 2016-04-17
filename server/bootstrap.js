@@ -1,4 +1,6 @@
 
+//If there are no users when the application starts.. Create two users
+
 Meteor.startup(function(){
 
 	if(Meteor.users.find().count() === 0) {

@@ -42,30 +42,11 @@ Template.edit_menu.events({
 		var price = event.target.price.value;
 		var description = event.target.description.value;
 
-		var file = $('#menuImage').get(0).files[0];
-
-		if(file){
-			fsFile = new FS.File(file);
-			MenuItemImages.insert(fsFile, function(err, result) {
-				if(!err){
-
-						var imageLocation = '/cfs/files/MenuItemImages/' + result._id;
-
-						//Insecure package removed. Edit function -  methods js to libs folder
-						Meteor.call('editMenuItems',this._id, imageLocation, name, price, description);
-
-				}
-
-			});
-
-		} else {
-
-			//without image
-			var imageLocation = '/img/comingsoon.png';
-			Meteor.call('editMenuItems',this._id, imageLocation, name, price, description);
 
 
-		}
+		//Insecure package removed. Edit function -  methods js to libs folder
+		Meteor.call('editMenuItems',this._id, name, price, description);
+
 
 		FlashMessages.sendSuccess('Menu Item Updated');
 		Router.go('/admin/menu');

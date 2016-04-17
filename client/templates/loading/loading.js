@@ -6,7 +6,7 @@ Template.loading.rendered = function () {
             backgroundColor: '#7f8c8d',
             loadingHtml: message + spinner
         });
-        Session.set('loadingSplash', true); // just show loading splash once
+        Session.set('loadingSplash', true);
     }
 };
 

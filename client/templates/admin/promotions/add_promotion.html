@@ -1,16 +1,16 @@
 <template name="add_promotion">
-	<div class="container pt">
+
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
 				<h2>Create Promotion</h2>
 				<form class="add_promotion_form" enctype="multipart/form-data">
                 	<div class="form-group">
                 		<label>Name</label>
-                		<input type="text" class="form-control" id="name" name="name" placeholder="Promotion Name">
+                		<input type="text" class="form-control" id="name" name="name" placeholder="Promotion Name" required>
                 	</div>
                 	<div class="form-group">
                 		<label>Price</label>
-                		<input type="text" class="form-control" id="price" name="price" placeholder="Promotion Price">
+                		<input type="text" class="form-control" id="price" name="price" placeholder="Promotion Price" required>
                 	</div>
                 	<div class="form-group">
                 		<label>Promotion Image</label>
@@ -21,6 +21,6 @@
 				</form>
 			</div>
 		</div>
-	</div>
+
 
 </template>

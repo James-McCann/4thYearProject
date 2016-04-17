@@ -12,7 +12,7 @@ Template.add_header.events({
                 if (!err) {
                     var imageLocation = '/cfs/files/HeaderLogo/' + result._id;
 
-                    //Insecure package removed. Add function -  methods js to libs folder
+
                     Meteor.call('addHeader', imageLocation, headerTitle, headerSubTitle, headerSubText);
 
                 }

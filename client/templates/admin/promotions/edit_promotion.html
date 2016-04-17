@@ -5,15 +5,14 @@
 				<form class="edit_promotion_form" enctype="multipart/form-data">
                                 	<div class="form-group">
                                 		<label>Name</label>
-                                		<input type="text" class="form-control" id="name" name="name" value="{{promotionName}}">
+                                		<input type="text" class="form-control" id="name" name="name" value="{{promotionName}}" required>
                                 	</div>
                                 	<div class="form-group">
                                 		<label>Price</label>
-                                		<input type="text" class="form-control" id="price" name="price" value="{{promotionPrice}}">
+                                		<input type="text" class="form-control" id="price" name="price" value="{{promotionPrice}}" required>
                                 	</div>
                                 	<div class="form-group">
                                 		<label>Image</label>
-                                		<input type="file" id="promotionImage" name="promotionImage">
                                                 Current Image: <img class="edit-image" src="{{promotionImage}}">
                                 	</div>
                                 	<button type="submit" class="btn btn-primary">Submit</button>

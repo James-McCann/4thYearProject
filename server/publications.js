@@ -2,6 +2,8 @@
  * Created by User on 28/01/2016.
  */
 
+//The applications publications to client
+
 Meteor.publish("MenuItems", function(){
 
     return MenuItems.find();
