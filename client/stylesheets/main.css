@@ -129,6 +129,15 @@ h3{
 .carouselImage{
 	padding-top: 50px;
 }
+
+
+	.pg-loading-screen .pg-loading-logo {
+		width: 470px;
+	}
+
+
+
+
 /* Home */
 .carouselImage{
 	width:auto;

@@ -18,7 +18,11 @@
                 </div>
                 <div class="form-group">
                     <label>Registered Email</label>
-                    <input type="text" class="form-control" id="email" name="email" value="{{currentUser.registered_emails.[0].address}}" readonly>
+                    {{# if registered_emails}}
+                        <input type="text" class="form-control" id="email" name="email" value="{{currentUser.registered_emails.[0].address}}" readonly>
+                    {{else}}
+                        <input type="text" class="form-control" id="email" name="email" value="N/A" readonly>
+                    {{/if}}
                 </div>
                 <div class="form-group">
                     <label>Reward Points</label>

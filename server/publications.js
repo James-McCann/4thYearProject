@@ -43,6 +43,7 @@ Meteor.publish("Markers", function(){
 
 Meteor.publish('allUsersData', function () {
     return Meteor.users.find({}, {fields: {profile: 1,
+        'username':1,
         'points':1,
         'roles':1,
         'registered_emails.address':1,

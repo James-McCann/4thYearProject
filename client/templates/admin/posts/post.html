@@ -34,12 +34,7 @@
 
         </div>
         <div class="col-md-11">
-            <small>Posted by
-                {{# if profile.name}}
-                    <strong>{{profile.name}}</strong>
-                {{else}}
-                    <strong>{{username}}</strong>
-                {{/if}} at {{format postCreatedAt}}</small>
+            <small>Posted by <strong>{{username}}</strong> at {{format postCreatedAt}}</small>
             <h3>{{postTitle}}</h3>
             <p>{{post}}</p>
             {{#if isInRole 'admin'}}
