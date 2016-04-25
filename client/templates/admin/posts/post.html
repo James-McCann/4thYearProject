@@ -35,10 +35,10 @@
         </div>
         <div class="col-md-11">
             <small>Posted by
-                {{# if currentUser.profile.name}}
-                    <strong>{{currentUser.profile.name}}</strong>
+                {{# if profile.name}}
+                    <strong>{{profile.name}}</strong>
                 {{else}}
-                    <strong>{{currentUser.username}}</strong>
+                    <strong>{{username}}</strong>
                 {{/if}} at {{format postCreatedAt}}</small>
             <h3>{{postTitle}}</h3>
             <p>{{post}}</p>
