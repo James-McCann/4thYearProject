@@ -1,9 +1,10 @@
-Template.voucher.events({
+Template.searchBox.events({
 
     'submit .customer_rewards_form' : function(){
         var points = event.target.pickerPoints.value;
-        //alert('Award: '+points+' to '+this._id.profile.name);
-       Meteor.call('addPoints', this._id, points);
+        var id = this._id.toString().substring(0,17);
+        alert('points: '+ points + ' '+ id);
+        Meteor.call('addPoints', id, points);
 
        return false;
 

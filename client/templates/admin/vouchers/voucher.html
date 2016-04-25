@@ -1,78 +1,46 @@
 <template name="voucher">
 
-    <!--<div class ="row">-->
-        <!--<div class="col-md-6 col-md-offset-3">-->
-            <!--<h3>Customer Reward Points</h3>-->
-            <!--<p><strong>Search Customers : </strong>{{> searchBox}}</p>-->
-        <!--</div>-->
-    <!--</div>-->
-
     <div class ="row">
-    <div class="col-md-6 col-md-offset-3">
-    <h3>Customer Reward Points</h3>
-    <!--<p><strong>Search Customers : </strong>{{> searchBox}}</p>-->
-        {{# each allUsersData }}
-        <form class="customer_rewards_form" enctype="multipart/form-data">
-        <div class="form-group">
-        <label>Username</label>
-        <input type="text" class="form-control" id="username" name="username" value="{{profile.name}}" readonly>
+        <div class="col-md-6 col-md-offset-3">
+            <h3>Customer Reward Points</h3>
+            <p><strong>Search Customers : </strong>{{> searchBox}}</p>
         </div>
-        <div class="form-group">
-        <label>Registered Email</label>
-            {{# if registered_emails}}
-        <input type="text" class="form-control" id="email" name="email" value="{{registered_emails.[0].address}}" readonly>
-            {{else}}
-        <input type="text" class="form-control" id="email" name="email" value="N/A" readonly>
-            {{/if}}
-        </div>
-        <div class="form-group">
-        <label>Points</label>
-
-        <input type="number" class="form-control" id="points" name="points" min=0 value={{points}} readonly>
-
-        </div>
-        <div class="form-group">
-        <label>Picker</label>
-        <input type="number" id="pickerPoints" name="pickerPoints" value=0>
-        </div>
-        <button type="submit" class="btn btn-primary">+/- Points</button>
-        </form>
-        {{/each}}
-
     </div>
-    </div>
+
 </template>
 
 <!--</template>-->
 
-<!--<template name="searchBox">-->
-    <!--{{> EasySearch.Input index=UsersIndex }}-->
-    <!--<ul>-->
-        <!--{{#EasySearch.Each index=UsersIndex }}-->
-                <!--<form class="customer_rewards_form" enctype="multipart/form-data">-->
-                    <!--<div class="form-group">-->
-                        <!--<label>Username</label>-->
-                        <!--<input type="text" class="form-control" id="username" name="username" value="{{profile.name}}" readonly>-->
-                    <!--</div>-->
-                    <!--<div class="form-group">-->
-                        <!--<label>Registered Email</label>-->
-                        <!--{{# if registered_emails}}-->
-                            <!--<input type="text" class="form-control" id="email" name="email" value="{{registered_emails.[0].address}}" readonly>-->
-                        <!--{{else}}-->
-                            <!--<input type="text" class="form-control" id="email" name="email" value="N/A" readonly>-->
-                        <!--{{/if}}-->
-                    <!--</div>-->
-                    <!--<div class="form-group">-->
-                        <!--<label>Points</label>-->
+<template name="searchBox">
+    {{> EasySearch.Input index=UsersIndex }}
+    <ul>
+        {{#EasySearch.Each index=UsersIndex }}
+                <form class="customer_rewards_form" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" class="form-control" id="username" name="username" value=" {{# if profile.name}}{{profile.name}}
+                    {{else}}{{username}}{{/if}}" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Registered Email</label>
+                        {{# if registered_emails}}
+                            <input type="text" class="form-control" id="email" name="email" value="{{registered_emails.[0].address}}" readonly>
+                        {{else}}
+                            <input type="text" class="form-control" id="email" name="email" value="N/A" readonly>
+                        {{/if}}
+                    </div>
+                    <div class="form-group">
+                        <label>Points</label>
 
-                        <!--<input type="number" class="form-control" id="points" name="points" min=0 value={{points}} readonly>-->
+                        <input type="number" class="form-control" id="points" name="points" min=0 value={{points}} readonly>
 
-                    <!--</div>-->
-                    <!--<div class="form-group">-->
-                        <!--<label>Picker</label>-->
-                        <!--<input type="number" id="pickerPoints" name="pickerPoints" value=0>-->
-                    <!--</div>-->
-                    <!--<button type="submit" class="btn btn-primary">+/- Points</button>-->
-                <!--</form>-->
-        <!--{{/EasySearch.Each}}-->
-    <!--</ul>-->
+                    </div>
+                    <div class="form-group">
+                        <label>Picker</label>
+                        <input type="number" id="pickerPoints" name="pickerPoints" value=0>
+                    </div>
+                    <button type="submit" class="btn btn-primary">+/- Points</button>
+                </form>
+        {{/EasySearch.Each}}
+    </ul>
+</template>
